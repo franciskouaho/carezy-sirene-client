@@ -1,0 +1,34 @@
+{
+  "name": "carezy-sirene-client",
+  "version": "0.1.0",
+  "description": "Client TypeScript pour vérifier un établissement SIRET et récupérer son avis de situation Sirene",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "lint": "eslint src tests",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.9",
+    "eslint": "9.39.4",
+    "typescript-eslint": "8.71.1"
+  }
+}
